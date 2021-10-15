@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: aliceblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 55px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav ul li{
+    padding: 0 12px;
+}
+nav ul li a{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.brand img{
+    width: 45px;
+    padding: 0 5px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.icon{
+    background: #eee4e4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon a{
+    height: 100px;
+    width: 100px;
+    background: #f5f6fa;
+    margin: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px 2px #dcdde1 fa-2x;
+    line-height: 110px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fa-instagram{
+    color: #e84393;
+  }
+  .fa-youtube{
+    color: #e84118;
+  }
+  .fa-linkedin{
+    color: #0097e6;
+  }
+
+  .icon a i{
+    transition: all 0.3s linear;
+  }
+  .icon a:hover .fab{
+    transform: scale(1.5);
+    color: #f5f6fa;
+  }
+
+  .icon a:before{
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -50%;
+    background-color: #00a8ff;
+    transform: rotate(60deg);
+  }
+
+  .icon a:hover:before{
+    animation: socialicon 0.8s 1;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes socialicon{
+    0% {top: 90%; left: -50%; }
+    50% {top: -60%; left: -10%; }
+    100% {top: -10%; left: -10%; }
+  }
+
+
+
+
+
+
+
+/*********************FOOTER PAGE CSS************************/
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}

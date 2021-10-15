@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: aliceblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 55px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav ul li{
+    padding: 0 12px;
+}
+nav ul li a{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.brand img{
+    width: 45px;
+    padding: 0 5px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.aboutContainer {
+    height: 80vh;
+    margin: 55px 0;
+    padding: 20px;
+}
+.aboutContainer h1{
+    color: red;
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.imgCont{
+    width: 100%;
+    margin-top: 40px;
+}
+.imgCont img{
+    width: 200px;
+    border-radius: 110px;
+    display: block;
+    margin: auto;
+}
+
+.imgCont h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+}
+
+.imgCont p {
+    margin: 25px auto;
+    text-align: center;
+    width: 534px;
+    font-size: 23px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+@media only screen and (max-width: 568px) {
+    .imgCont p{
+        width: 376px;
+    }
+  }

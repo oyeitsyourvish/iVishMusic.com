@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: aliceblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 55px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav ul li{
+    padding: 0 12px;
+}
+nav ul li a{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.brand img{
+    width: 45px;
+    padding: 0 5px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 70vh;
+    background: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 80px auto;
+    width: 70%;
+    border-radius: 5px;
+    padding:15px;
+    background-image: url('bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: rgb(20, 17, 17);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 22px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 40px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px ;
+}
+.songItem img{
+    width: 35px;
+    margin: 0 22px;
+    border-radius: 5px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    left: 10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+/* Media query started here */
+@media only screen and (max-width: 891px) {
+    .songList{
+        font-size: 12px;
+        font-weight: bold;
+        margin: auto;
+    }
+    .bottom{
+        position: sticky;
+        height: 143px;
+        
+    }
+    #myProgressBar{
+        margin-top: 26px;
+    }
+    .icons{
+        margin-top: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 508px) {
+    .songList{
+        font-size: 8px;
+        font-weight: bold;
+        margin: auto;
+    }
+  }
+
+ 
